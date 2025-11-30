@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Pour les polices, c'est Google Font */
+
+*{
+    font-family: 'Montserrat';
+
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+/* tete de page  */
+
+header.header { 
+    display: flex;
+    align-items: center;
+}
+header.header img {
+    width: 150px
+}
+
+
+section.top-page {
+    background: url('../Image/Background.jpg');
+    background-size: cover;
+    height: 65vh;
+    padding: 25px;
+}
+
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    padding: 30px 25px
+}
+.big-title {
+    font-family: 'Abril FatFace', cursive; 
+    font-weight: 100;
+    color: white;
+    font-size: 60px;
+    
+}
+
+
+/* Menu de navigation */
+
+nav.nav {
+    display :flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:space-between;
+    gap: 40px;
+    list-style: none;
+    /* width: 200px; */
+    margin-left: 50px;
+}
+
+nav.nav a {
+    text-decoration: none;
+    transition: 0.2s;
+    color: white;
+
+}
+
+
+.nav a:hover {
+    color: dimgrey;
+    text-decoration:underline ;
+}
+
+
+/* Descriptif */
+
+.descriptif {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+}
+
+.card-container{ 
+    display: flex;              /* Utilise Flexbox pour l'alignement */
+    gap: 70px;                  /* Espace entre les cartes */
+    padding-left: 30px;
+    justify-content : space-between;       /* Centre les cartes horizontalement */
+    flex-wrap: wrap;                /* Permet aux cartes de passer à la ligne sur mobile */
+}
+
+.cards{
+    background-color: #2c2c2c;     /* Un fond légèrement plus clair que le fond du site pour la faire ressortir */
+    padding: 30px;
+    border-radius: 10px;                                        /* Coins arrondis pour un look moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);               /* Ombre portée pour l'effet 3D */
+    max-width: 300px;                                       /* Taille maximale pour ne pas être trop large */
+    flex-grow: 1;                                               /* Permet à la carte de grandir */
+    transition: transform 0.3s ease;                            /* Animation au survol */
+    color: white;
+
+}
+
+.cards:hover {
+    transform: translateY(-5px); /* Remonte légèrement la carte au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Ombre plus marquée */
+}
+
+.cards h2 {
+    color: #4da6ff; /* Utilise une couleur d'accentuation (un bleu clair) */
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 3000px;
+    color: black;
+
+
+}
+
+.msg {
+    font-size: 15px;
+    font-weight: 350px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* En savoir plus */
+
+.ensavoirplus{
+    font-size: 50px;
+    font-family: 'abril fatface', cursive;
+    font-weight: 100;
+    position: relative;
+    padding-left: 50px;
+}
+
+.ensavoirplus::before{
+    content:"";
+    position: absolute;
+    background-color: darkblue;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+
+
+.annee-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 35px; 
+    padding: 40px 20px;
+    /* width: 100%; */
+    margin-bottom: 90px;
+}
+
+
+/* Style de la tuile de navigation (le lien) */
+.nav-tile {
+    flex: 1;
+    max-width: 550px;
+    /* flex: 1 1 500px; */
+    display: block; /* Important pour que le lien prenne la taille */
+    position: relative;
+    min-width: 0;
+    overflow: hidden; /* Cache ce qui dépasse (comme l'effet zoom) */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    text-decoration: none; /* Enlève le soulignement du lien */
+    color: white; /* Couleur du texte sur l'image */
+    transition: all 0.4s ease;
+}
+
+/* Style de l'image à l'intérieur de la tuile */
+.nav-tile img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    transition: transform 0.4s ease; /* Transition pour l'effet zoom */
+}
+
+/* Texte qui se superpose (overlay) */
+.tile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour lire le texte */
+    padding: 10px;
+}
+
+/* Effet au survol pour signaler que c'est cliquable */
+.nav-tile:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.nav-tile:hover img {
+    transform: scale(1.05); /* Zoom léger sur l'image au survol */
+}
+
+.tile-overlay h3 {
+    color: #4da6ff; /* Couleur d'accentuation */
+    margin: 0;
+}
+
+.tile-overlay p {
+    font-size: 0.9em;
+    margin: 5px 0 0 0;
+}
+
+
+
+
+.synthese{
+     font-size: 50px;
+    font-family: 'abril fatface', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.synthese::before{
+    content:"";
+    position: absolute;
+    background-color: darkblue;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.tableau{
+    margin: 50px;
+    margin-bottom: 260px;
+}
+
+.table {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.table:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: darkblue ;
+    color: white ;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.download:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* Pied de page */
+.footer {
+    display: flex;
+    align-items: center;
+    margin:10px 20px;
+}
+
+
+.footer {
+    background-color:gray;  /* noir clean */
+    color: white;
+    padding: 10px 30px;
+    margin: 0;                   /* enlève TOUTES les marges */
+}
+
+.footer-section a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    text-decoration: underline;
+    color: floralwhite;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    margin-left: auto;
+    white-space: nowrap; /* optionnel : évite le retour à la ligne interne */
+    font-size: 0.85rem;
+}
+
+
