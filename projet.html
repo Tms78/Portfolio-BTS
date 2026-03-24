@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="icon" type="image/png" href="Image/icone.png">
+    <title>Mon Projet - Nagios</title>
+</head>
+<body>
+    <body class="dark-theme">
+    <nav class="nav-wrapper-floating">
+        <a href="index.html" class="bubble-button">🏠 Accueil</a>
+    </nav>
+
+    <header class="project-header">
+        <span class="badge">PROJET SISR</span>
+        <h1>Migration & Optimisation de la Supervision</h1>
+        <p class="subtitle">Migration de PRTG vers Nagios et interfaçage API</p>
+    </header>
+
+    <main class="main-container">
+        <div class="comp-card">
+        <section class="cr-row">
+            <div class="cr-text">
+                <h3>🔍 Contexte du Projet</h3>
+                <p>L'objectif était de centraliser la supervision de l'unité U2D. J'ai participé activement à la migration des sondes depuis PRTG vers un environnement <strong>Nagios</strong> sous Linux.</p>
+                <p>Cette mission a nécessité la configuration de fichiers de contacts et la définition de seuils critiques pour garantir la réactivité de l'équipe.</p>
+            </div>
+            <div class="cr-photo">
+                <img src="Image/nagios-orga.png" alt="Interface Nagios">
+                <span class="caption">Interface de supervision temps réel</span>
+            </div>
+        </section>
+            </div>
+    
+            <div class="comp-card">
+
+        <section class="cr-row reverse">
+            <div class="cr-text">
+                <h3>💻 Développement du Script API</h3>
+                <p>Le défi majeur était de lier les alertes Nagios à notre nouvel outil de ticketing <strong>Optick</strong>. J'ai développé un script en <code>curl</code> permettant d'envoyer les notifications directement à l'API de l'outil.</p>
+                <p>Résultat : un gain de temps considérable et une suppression des saisies manuelles.</p>
+            </div>
+            <div class="cr-photo">
+                <img src="Image/Nagios-compo.png" alt="Code Script">
+                <span class="caption">Extrait du script Curl / API</span>
+            </div>
+        </section>
+            </div>  
+
+        <section class="procedure-section">
+            <div class="conclusion-card">
+                <div class="conclusion-icon">📄</div>
+                <div class="conclusion-text">
+                    <h3>Livrable Technique</h3>
+                    <p>Consultez la procédure complète d'installation et les schémas réseau détaillés du projet.</p>
+                    <a href="PDF-imp/CV-THOMAS DA SILVA CAETANO.pdf" target="_blank" class="bubble-button download-btn">
+                        📂 Ouvrir la Procédure (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="">
+        <div id="caption"></div>
+    </div>
+</body>
+</section>
+</body>
+</html>

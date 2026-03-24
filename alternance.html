@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="icon" type="image/png" href="Image/page1logo.png">
+    <title>Mon Alternance</title>
+</head>
+<body>
+    <body class="dark-theme">
+    <nav class="nav-wrapper-floating">
+    <a href="index.html" class="bubble-button">
+        <span class="icon">🏠</span> Accueil
+    </a>
+</nav>
+    </div>
+</nav>
+ <section class="alternance-detail">
+    <div class="header-ratp">
+        <img src="Image/logo-ratp.webp" alt="RATP" class="logo-entreprise">
+        <span class="contrat-badge">Contrat d'Apprentissage - 2 ans</span>
+    </div>
+
+    <section class="ratp-presentation">
+    <div class="ratp-intro-grid">
+        <div class="ratp-text">
+            <h2>L'Entreprise : Le Groupe RATP</h2>
+            <p>
+                Acteur majeur du transport public mondial, la RATP (Régie autonome des transports parisiens) transporte chaque jour des millions de voyageurs. 
+                Avec un chiffre d'affaires de plus de <strong>6,5 milliards d'euros</strong>, le groupe se place à la pointe de l'innovation 
+                pour la mobilité durable et connectée.
+                L'entreprise est présente avec plusieurs sites dans tout Paris et s'etend même à l'international, notamment en Afrique du Sud, Arabie saoudite, Égypte, États-Unis
+            </p>
+            <div class="localisation-badge">
+                📍 Situé à : <strong>Val de Fontenay</strong>
+            </div>
+        </div>
+
+        <div class="ratp-stats">
+            <div class="stat-card">
+                <span class="stat-number">3ème</span>
+                <span class="stat-label">Opérateur mondial</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">71k+</span>
+                <span class="stat-label">Collaborateurs</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="grid-alternance">
+        <div class="card-info">
+            <h3>👥 Mon Équipe</h3>
+            <p>Au sein de l'équipe <strong>U2D</strong>(urbanisation, développement & data), j'évolue dans une équipe de 16 personnes chargée de différentes missions selon les pôles ce qui m'as permi de voir plus que du simple réseau.</p>
+        </div>
+
+        <div class="card-info">
+            <h3>⚙️ Mes Missions Principales</h3>
+            <ul>
+                <li>Maintenance des infrastructures réseaux</li>
+                <li>Qualification logicielle et tests de sécurité</li>
+                <li>Support technique niveau 2 (ticketing, supervision...)</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="galerie-technique">
+    <h2>📸 Immersion & Réalisations</h2>
+    <div class="photo-grid">
+        <div class="photo-item">
+            <img src="Image/Nagios-compo.png" alt="Supervision Nagios">
+            <div class="photo-caption">Supervision en temps réel des serveurs critiques</div>
+        </div>
+        <div class="photo-item">
+            <img src="Image/poste-travail.jpg" alt="Poste de travail">
+            <div class="photo-caption">Mon environnement de travail à Val de Fontenay</div>
+        </div>
+        <div class="photo-item">
+            <img src="Image/osticket1.png" alt="Gestion de tickets">
+            <div class="photo-caption">Traitement des incidents via OSticket</div>
+        </div>
+    </div>
+</section>
+
+<section class="compte-rendu-final">
+    <h2>📝 Mon Bilan d'Apprentissage (2 ans)</h2>
+
+    <div class="cr-row">
+        <div class="cr-text">
+            <h3>📍 Introduction et Environnement</h3>
+            <p>Durant ces deux années d'alternance au sein du groupe <strong>RATP</strong>, j'ai été intégré à l'unité <strong>U2D</strong> (Urbanisation, Développement et Data) de la DSI. Au sein d'une équipe de 16 collaborateurs, j'ai évolué dans le pôle dédié à la gestion réseau et au support de proximité. Cette immersion m'a permis de passer d'une découverte du milieu professionnel à une autonomie complète sur des missions d'infrastructure critique.</p>
+        </div>
+        <div class="cr-photo">
+            <img src="Image/equipeU2d.png" alt="Equipe U2D">
+            <span class="caption">L'unité U2D à Val de Fontenay</span>
+        </div>
+    </div>
+
+    <div class="cr-row reverse">
+        <div class="cr-photo">
+            <img src="Image/Nagios-compo.png" alt="Ecran Nagios">
+            <span class="caption">Supervision Nagios </span>
+        </div>
+        <div class="cr-text">
+            <h3>⚙️ Missions Techniques et Administration</h3>
+            <p>Mon quotidien a été rythmé par l'administration via <strong>Active Directory</strong> et l'outil "demandes de droits". J'ai géré le ticketing via <strong>OS Tickets</strong> puis <strong>Optick</strong>.</p>
+            <p>Participation au transfert de la supervision de <strong>PRTG</strong> vers <strong>Nagios</strong>, incluant la configuration de serveurs sous Linux via l'éditeur Vim et l'activation des notifications par mail d'alertes Nagios qui générai automatiquement un ticket via la lecture de la boite mail. 
+            Puis gestion des seuils et par la suite création d'un fichier scripts et d'un nouveau contact car le nouvel outil de ticketing n'utilisait pas le services mail, il a donc fallu remonter les notifications via un scripts avec un "curl" qui appeler et reconnaissait les commandes Nagios, puis les envoyait a l'API du nouvel outil.</p>
+        </div>
+    </div>
+
+    <div class="cr-row">
+        <div class="cr-text">
+            <h3>🛡️ Sécurité et Déploiements Terrain</h3>
+            <p>J'ai assuré la mise en place de l'antivirus <strong>SentinelOne</strong> manuellement sur serveurs et VMs pour garantir la stabilité. Au-delà de l'administration centralisée, j'ai mené de nombreuses interventions sur site (Denfert-Rochereau, Nanterre, Villette, Champs-Élysées):Projet VERDI & Galaxie : Configuration d'écrans de dépêches et transfert du système Cyberweb vers le nouveau système Galaxie, incluant le paramétrage des comptes de service et la résolution de problèmes réseau (DHCP/IP fixe) sur des machines (imprimantes, photocopieur, pcs...).
+</p>
+        </div>
+        <div class="cr-photo">
+            <img src="Image/galaxie.png" alt="Intervention Terrain">
+            <span class="caption">Projet Galaxie</span>
+        </div>
+    </div>
+
+    <div class="cr-row">
+        <div class="cr-text">
+            <h3>💻 Gestion du parc informatique et logiciels</h3>
+            <p>Responsable de la phase de qualification pour des applications métiers (AutoCad, Revit, Sketchup, etc.). Cela comprenait les tests d'installation/désinstallation, la création de modes opératoires et la validation via Digital'K (qui es un site mis en place par la RATP) afin d'y trouver de nombreux besoins qui nécessite par a suite validation...(tels que le renouvellement d'un PC, l'autorisation du compte administrateur indéfini, et bien plus encore...) pour l'automatisation de l'installation pour un groupe défini dans le centre logiciel. Analyse et extraction de données via Digital'K pour optimiser l'inventaire matériel, identifier les postes inactifs et réduire les coûts de maintenance et de licences.
+</p>
+        </div>
+        <div class="cr-photo">
+            <img src="Image/Pro1.png" alt="Intervention Terrain">
+            <span class="caption">Dossier de qualifications</span>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Zoom">
+    <div id="caption"></div>
+</div>
+</section>
+
+<section class="conclusion-summary">
+    <div class="conclusion-card">
+        <div class="conclusion-icon">🎯</div>
+        <div class="conclusion-text">
+            <h3>Conclusion & Acquis</h3>
+            <p>
+                Ces deux années ont été marquées par une montée en compétences sur le <strong>réseau en général</strong> et sur la <strong>gestion d'infrastructures complexes</strong>. 
+                J'ai appris à travailler en horaires décalés (missions de nuit à la Villette) et à assurer un rôle de conseil auprès des opérationnels de terrain.
+            </p>
+            <p class="final-statement">
+                Cette expérience confirme mon projet professionnel dans le domaine <strong>SISR</strong> et ma capacité à intégrer une équipe technique de grande envergure.
+            </p>
+        </div>
+    </div>
+</section>
+</section>
+
+<script> document.addEventListener('DOMContentLoaded', function() {
+    // On récupère toutes les images de tes galeries et comptes-rendus
+    const images = document.querySelectorAll('img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const captionText = document.getElementById('caption');
+
+    images.forEach(img => {
+        img.onclick = function() {
+            lightbox.style.display = "flex";
+            lightboxImg.src = this.src;
+            // On récupère la légende si elle existe
+            const caption = this.parentElement.querySelector('.photo-caption, .caption');
+            captionText.innerHTML = caption ? caption.innerHTML : "";
+        }
+    });
+});
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = "none";
+} 
+</script>
+</body>
+</html>
+
