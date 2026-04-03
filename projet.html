@@ -15,8 +15,8 @@
 
     <header class="project-header">
         <span class="badge">PROJET SISR</span>
-        <h1>Migration & Optimisation de la Supervision</h1>
-        <p class="subtitle">Migration de PRTG vers Nagios et interfaçage API</p>
+        <h1>Mise en place d'un outil de Supervision</h1>
+        <p class="subtitle">Déploiement & Optimisation du Superviseur Nagios</p>
     </header>
 
     <main class="main-container">
@@ -24,11 +24,11 @@
         <section class="cr-row">
             <div class="cr-text">
                 <h3>🔍 Contexte du Projet</h3>
-                <p>L'objectif était de centraliser la supervision de l'unité U2D. J'ai participé activement à la migration des sondes depuis PRTG vers un environnement <strong>Nagios</strong> sous Linux.</p>
+                <p>L'objectif était de déploier un outil de supervision efficace et centralisé, afin d'avoir une visibilité optimale sur l'ensemble des équipements.</p>
                 <p>Cette mission a nécessité la configuration de fichiers de contacts et la définition de seuils critiques pour garantir la réactivité de l'équipe.</p>
             </div>
             <div class="cr-photo">
-                <img src="Image/nagios-orga.png" alt="Interface Nagios">
+                <img src="Image/nagios-conf.png" alt="Interface Nagios">
                 <span class="caption">Interface de supervision temps réel</span>
             </div>
         </section>
@@ -38,7 +38,7 @@
 
         <section class="cr-row reverse">
             <div class="cr-text">
-                <h3>💻 Développement du Script API</h3>
+                <h3>💻 </h3>
                 <p>Le défi majeur était de lier les alertes Nagios à notre nouvel outil de ticketing <strong>Optick</strong>. J'ai développé un script en <code>curl</code> permettant d'envoyer les notifications directement à l'API de l'outil.</p>
                 <p>Résultat : un gain de temps considérable et une suppression des saisies manuelles.</p>
             </div>
@@ -68,6 +68,28 @@
         <img id="lightbox-img" src="">
         <div id="caption"></div>
     </div>
+
+     <script>
+        window.onload = function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const images = document.querySelectorAll('.cr-photo img');
+
+            images.forEach(img => {
+                img.onclick = function(e) {
+                    // Si l'image est dans un lien PDF, on ne veut pas ouvrir le zoom mais le PDF
+                    if (this.parentElement.tagName === 'A') return; 
+                    
+                    lightbox.style.display = "flex";
+                    lightboxImg.src = this.src;
+                }
+            });
+        };
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = "none";
+        }
+    </script>
 </body>
 </section>
 </body>
