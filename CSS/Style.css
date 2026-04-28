@@ -167,7 +167,7 @@ nav.nav a {
     display: flex;
     justify-content: center; /* Aligne la tuile au centre horizontalement */
     align-items: center;
-    padding: 20px 5px;
+    padding: 50px 0px;
     gap: 10px; /* Espace entre les tuiles */
     width: 100%;
 }
@@ -988,3 +988,38 @@ nav.nav a {
 .cr-text { flex: 1.5; }
 .cr-photo { flex: 1; text-align: center; }
 .cr-photo img { width: 100%; border-radius: 10px; border: 1px solid #333; cursor: zoom-in; }
+
+
+/* Bouton telechargement page veille */
+.download-container {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.download-card {
+    border: 2px dashed #3498db; /* Effet pointillé pour attirer l'oeil */
+    padding: 40px !important;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.download-btn i {
+    margin-right: 10px;
+}
